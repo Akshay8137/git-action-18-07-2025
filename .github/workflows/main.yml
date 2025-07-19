@@ -26,5 +26,5 @@ jobs:
 
       - name: Verify JAR
         run: ls -l target/
-      - name: echo
+      - name: echo "name is $NAME"
         run: echo " print name $NAME"
