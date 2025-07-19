@@ -1,4 +1,4 @@
-name: Maven Build and Publish h
+name: Maven Build and Publish
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
       NAME: akshay
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Build with Maven
@@ -26,5 +26,6 @@ jobs:
 
       - name: Verify JAR
         run: ls -l target/
-      - name: echo "name is $NAME"
-        run: echo " print name $NAME"
+
+      - name: Echo name
+        run: echo "print name $NAME"
